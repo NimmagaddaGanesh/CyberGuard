@@ -1,0 +1,32 @@
+[
+  {
+    "incident_id": "INC-0001",
+    "incident_category": "Cybersecurity",
+    "incident_type": "Brute Force Attack",
+    "severity": "High",
+    "affected_system": "VPN Gateway",
+    "description": "Repeated failed login attempts from multiple IPs.",
+    "symptoms": [
+      "Failed logins",
+      "Authentication errors"
+    ],
+    "indicators_of_compromise": [
+      "203.0.113.45",
+      "198.51.100.20"
+    ],
+    "root_cause": "Credential stuffing campaign",
+    "playbook_used": "PB-003",
+    "resolution": [
+      "Enable MFA",
+      "Block offending IPs"
+    ],
+    "resolution_success": true,
+    "success_score": 0.92,
+    "analyst_feedback": "MFA immediately reduced attack success rate.",
+    "lessons_learned": [
+      "Weak passwords were the primary risk factor."
+    ],
+    "investigation_notes": "IPs linked to credential stuffing infrastructure.",
+    "timestamp": "2026-09-28T12:30:00Z"
+  }
+]

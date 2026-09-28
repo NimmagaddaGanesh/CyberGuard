@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-09-28T10:57:24.993928+00:00",
+  "source": "CyberGuard + OpenAI",
+  "source_file": "backend/data/test_IncidentAnalysis.json",
+  "incidents_processed": 1,
+  "results": [
+    {
+      "incident_id": "EVAL-0054",
+      "error": "AuthenticationError",
+      "error_message": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_llm_key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}"
+    }
+  ]
+}
