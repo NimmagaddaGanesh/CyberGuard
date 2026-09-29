@@ -26,13 +26,13 @@ app = FastAPI(
 # Enable CORS for Frontend Next.js integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows Next.js frontend (http://localhost:3000)
+    allow_origins=settings.ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def read_root():
     return {
         "status": "online",
@@ -41,7 +41,7 @@ def read_root():
         "groq_configured": bool(settings.GROQ_API_KEY)
     }
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health_check():
     return {"status": "healthy"}
 
