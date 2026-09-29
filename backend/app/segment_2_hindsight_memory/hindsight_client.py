@@ -142,6 +142,31 @@ class HindsightMemoryClient:
 
         return profile
 
+    async def retain_experience_cloud(self, resolution_id: str, outcome: str, incident_id: str):
+        """
+        Retains live analyst experience in Hindsight Cloud SDK so Experience counter increments in Hindsight Dashboard.
+        """
+        if self.hindsight_sdk:
+            try:
+                experience_text = (
+                    f"MY OPERATIONAL EXPERIENCE:\n"
+                    f"I am a Tier-3 SOC Analyst. I resolved incident {incident_id}.\n"
+                    f"Resolution Executed: {resolution_id}\n"
+                    f"Outcome: {outcome.upper()}.\n"
+                    f"Analyst Notes: Confirmed resolution effective in live investigation."
+                )
+                await asyncio.to_thread(
+                    self.hindsight_sdk.retain,
+                    bank_id=self.bank_id,
+                    content=experience_text,
+                    context="CyberGuard Analyst Live Experience",
+                    document_id=f"EXP-{incident_id}",
+                    tags=["experience", "analyst_feedback"]
+                )
+                print(f"[Hindsight Cloud] Successfully retained analyst experience for {incident_id}")
+            except Exception as e:
+                print(f"[Hindsight Cloud Retain Warning] {e}")
+
     def update_local_memory(self, resolution_id: str, outcome: str, incident_id: str) -> Dict[str, Any]:
         """
         Updates memory metrics locally when analyst submits feedback.

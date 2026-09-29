@@ -11,8 +11,16 @@ class MemoryUpdateWorker:
     async def process_feedback(submission: FeedbackSubmission) -> FeedbackResponse:
         """
         Applies analyst feedback, updates memory state, and returns updated metrics.
+        Commits experience memory to Hindsight Cloud.
         """
         updated_data = hindsight_service.update_local_memory(
+            resolution_id=submission.resolution_id,
+            outcome=submission.feedback_outcome,
+            incident_id=submission.incident_id
+        )
+
+        # Retain live experience to Hindsight Cloud SDK so Experience counter increments in Hindsight Dashboard
+        await hindsight_service.retain_experience_cloud(
             resolution_id=submission.resolution_id,
             outcome=submission.feedback_outcome,
             incident_id=submission.incident_id

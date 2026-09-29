@@ -9,6 +9,12 @@ class Settings:
     APP_NAME: str = os.getenv("APP_NAME", "CyberGuard API Engine")
     HOST: str = os.getenv("HOST", "0.0.0.0")
     PORT: int = int(os.getenv("PORT", "8000"))
+    
+    # CORS Configuration
+    ALLOWED_ORIGINS_RAW: str = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,*")
+    @property
+    def ALLOWED_ORIGINS(self) -> list:
+        return [origin.strip() for origin in self.ALLOWED_ORIGINS_RAW.split(",") if origin.strip()]
 
     # Hindsight Settings
     HINDSIGHT_API_KEY: str = os.getenv("HINDSIGHT_API_KEY", "")
