@@ -1,0 +1,1802 @@
+[
+    {
+        "alert_id": "ALT-2026-9100",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.37"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9054",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.246"
+        ],
+        "extensions": {
+            "attempt_count": 31,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9055",
+        "category": "Traditional Cyber",
+        "incident_type": "Credential Stuffing",
+        "severity": "High",
+        "affected_system": "Identity Management Server",
+        "symptoms": [
+            "Repeated login failures",
+            "Multiple accounts targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.224"
+        ],
+        "extensions": {
+            "attempt_count": 146,
+            "target_accounts": 17
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9024",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.64"
+        ],
+        "extensions": {
+            "scanned_ports": 498,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9071",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.6"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9096",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.88"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-10"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9003",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.112"
+        ],
+        "extensions": {
+            "attempt_count": 30,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9089",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.16"
+        ],
+        "extensions": {
+            "agent_id": "agent-3",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9056",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.61"
+        ],
+        "extensions": {
+            "attempt_count": 40,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9005",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.221"
+        ],
+        "extensions": {
+            "scanned_ports": 141,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9066",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.128"
+        ],
+        "extensions": {
+            "scanned_ports": 252,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9099",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.162"
+        ],
+        "extensions": {
+            "agent_id": "agent-3",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9008",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.188"
+        ],
+        "extensions": {
+            "scanned_ports": 314,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9070",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.205"
+        ],
+        "extensions": {
+            "attempt_count": 22,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9016",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.66"
+        ],
+        "extensions": {
+            "scanned_ports": 85,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9044",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.136"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9067",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.156"
+        ],
+        "extensions": {
+            "request_count": 19778,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9076",
+        "category": "AI Security",
+        "incident_type": "Excessive Agent Permissions",
+        "severity": "Critical",
+        "affected_system": "AI Agent Platform",
+        "symptoms": [
+            "Agent accessed restricted capability",
+            "Permission boundary exceeded"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.188"
+        ],
+        "extensions": {
+            "agent_id": "agent-9",
+            "permission": "admin_access"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9069",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.64"
+        ],
+        "extensions": {
+            "attempt_count": 16,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9095",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.32"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9011",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.111"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9002",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.75"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9023",
+        "category": "Traditional Cyber",
+        "incident_type": "Credential Stuffing",
+        "severity": "High",
+        "affected_system": "Identity Management Server",
+        "symptoms": [
+            "Repeated login failures",
+            "Multiple accounts targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.67"
+        ],
+        "extensions": {
+            "attempt_count": 69,
+            "target_accounts": 24
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9021",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.110"
+        ],
+        "extensions": {
+            "request_count": 7994,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9065",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.139"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9079",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.177"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-5"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9036",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.116"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9010",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.152"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9034",
+        "category": "Traditional Cyber",
+        "incident_type": "Brute Force Attack",
+        "severity": "High",
+        "affected_system": "Internal VPN Gateway",
+        "symptoms": [
+            "Multiple failed SSH attempts",
+            "Burst authentication spikes"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.11"
+        ],
+        "extensions": {
+            "attempt_count": 126,
+            "protocol": "SSH"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9060",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.172"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9027",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.25"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9013",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.53"
+        ],
+        "extensions": {
+            "request_count": 16495,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9091",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.164"
+        ],
+        "extensions": {
+            "agent_id": "agent-8",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9077",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.237"
+        ],
+        "extensions": {
+            "agent_id": "agent-8",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9081",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.235"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-3"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9020",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.101"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9037",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.104"
+        ],
+        "extensions": {
+            "request_count": 5713,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9050",
+        "category": "Traditional Cyber",
+        "incident_type": "Brute Force Attack",
+        "severity": "High",
+        "affected_system": "Internal VPN Gateway",
+        "symptoms": [
+            "Multiple failed SSH attempts",
+            "Burst authentication spikes"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.193"
+        ],
+        "extensions": {
+            "attempt_count": 163,
+            "protocol": "SSH"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9043",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.151"
+        ],
+        "extensions": {
+            "scanned_ports": 413,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9039",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.222"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9015",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.83"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9092",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.237"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9078",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.203"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9052",
+        "category": "Traditional Cyber",
+        "incident_type": "Credential Stuffing",
+        "severity": "High",
+        "affected_system": "Identity Management Server",
+        "symptoms": [
+            "Repeated login failures",
+            "Multiple accounts targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.150"
+        ],
+        "extensions": {
+            "attempt_count": 115,
+            "target_accounts": 22
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9082",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.222"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9029",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.165"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9068",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.169"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9042",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.15"
+        ],
+        "extensions": {
+            "attempt_count": 47,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9033",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.21"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9019",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.174"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9017",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.88"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9026",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.122"
+        ],
+        "extensions": {
+            "scanned_ports": 317,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9086",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.24"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9040",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.77"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9080",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.193"
+        ],
+        "extensions": {
+            "agent_id": "agent-1",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9058",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.220"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9064",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.179"
+        ],
+        "extensions": {
+            "scanned_ports": 409,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9051",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.220"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9048",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.219"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9061",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.246"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 718
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9097",
+        "category": "AI Security",
+        "incident_type": "Prompt Injection",
+        "severity": "High",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Instruction override attempt detected",
+            "Suspicious prompt pattern observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.35"
+        ],
+        "extensions": {
+            "agent_id": "agent-5",
+            "attack_type": "instruction_override"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9075",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.118"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-3"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9022",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.187"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9063",
+        "category": "Traditional Cyber",
+        "incident_type": "Credential Stuffing",
+        "severity": "High",
+        "affected_system": "Identity Management Server",
+        "symptoms": [
+            "Repeated login failures",
+            "Multiple accounts targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.181"
+        ],
+        "extensions": {
+            "attempt_count": 75,
+            "target_accounts": 40
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9087",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.121"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9053",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.118"
+        ],
+        "extensions": {
+            "scanned_ports": 442,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9001",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.11"
+        ],
+        "extensions": {
+            "attempt_count": 41,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9006",
+        "category": "Traditional Cyber",
+        "incident_type": "SQL Injection",
+        "severity": "High",
+        "affected_system": "Web Application",
+        "symptoms": [
+            "Suspicious database query patterns",
+            "Unexpected SQL errors"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.62"
+        ],
+        "extensions": {
+            "endpoint": "/login",
+            "database": "ApplicationDB"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9098",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.43"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-7"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9028",
+        "category": "Traditional Cyber",
+        "incident_type": "Malware Detection",
+        "severity": "High",
+        "affected_system": "Endpoint Detection System",
+        "symptoms": [
+            "Suspicious executable detected",
+            "Unexpected process execution"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.127"
+        ],
+        "extensions": {
+            "process": "suspicious.exe",
+            "detection_engine": "EDR"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9031",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.152"
+        ],
+        "extensions": {
+            "request_count": 19802,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9004",
+        "category": "Traditional Cyber",
+        "incident_type": "Port Scanning",
+        "severity": "Medium",
+        "affected_system": "Network Firewall",
+        "symptoms": [
+            "Large number of connection attempts",
+            "Sequential destination ports observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.4"
+        ],
+        "extensions": {
+            "scanned_ports": 421,
+            "protocol": "TCP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9072",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.233"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-8"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9074",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.163"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9009",
+        "category": "Traditional Cyber",
+        "incident_type": "Credential Stuffing",
+        "severity": "High",
+        "affected_system": "Identity Management Server",
+        "symptoms": [
+            "Repeated login failures",
+            "Multiple accounts targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.172"
+        ],
+        "extensions": {
+            "attempt_count": 78,
+            "target_accounts": 40
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9041",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.4"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9046",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.230"
+        ],
+        "extensions": {
+            "request_count": 10492,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9047",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.12"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9059",
+        "category": "Traditional Cyber",
+        "incident_type": "Cloud IAM Misconfiguration",
+        "severity": "High",
+        "affected_system": "Cloud IAM",
+        "symptoms": [
+            "Unexpected permission change",
+            "Resource access policy modified"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.63"
+        ],
+        "extensions": {
+            "resource": "storage-bucket",
+            "change_type": "permission_update"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9073",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.47"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9025",
+        "category": "Traditional Cyber",
+        "incident_type": "Unauthorized Access",
+        "severity": "High",
+        "affected_system": "Internal Application Server",
+        "symptoms": [
+            "Repeated unauthorized access attempts",
+            "Privileged account targeted"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.216"
+        ],
+        "extensions": {
+            "attempt_count": 17,
+            "target_role": "admin"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9083",
+        "category": "AI Security",
+        "incident_type": "Unsafe Tool Invocation",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Dangerous tool invocation detected",
+            "Tool request outside approved policy"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.120"
+        ],
+        "extensions": {
+            "tool": "file_delete",
+            "policy_violation": true
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9088",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.187"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9084",
+        "category": "AI Security",
+        "incident_type": "Excessive Agent Permissions",
+        "severity": "Critical",
+        "affected_system": "AI Agent Platform",
+        "symptoms": [
+            "Agent accessed restricted capability",
+            "Permission boundary exceeded"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.79"
+        ],
+        "extensions": {
+            "agent_id": "agent-10",
+            "permission": "admin_access"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9057",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.230"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 2662
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9018",
+        "category": "Traditional Cyber",
+        "incident_type": "Brute Force Attack",
+        "severity": "High",
+        "affected_system": "Internal VPN Gateway",
+        "symptoms": [
+            "Multiple failed SSH attempts",
+            "Burst authentication spikes"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.242"
+        ],
+        "extensions": {
+            "attempt_count": 156,
+            "protocol": "SSH"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9035",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.150"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9007",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.33"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 4424
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9085",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.43"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9062",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.29"
+        ],
+        "extensions": {
+            "request_count": 15870,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9094",
+        "category": "AI Security",
+        "incident_type": "AI Tool Abuse",
+        "severity": "High",
+        "affected_system": "AI Agent Gateway",
+        "symptoms": [
+            "Unexpected AI tool invocation",
+            "Tool used outside normal workflow"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.18"
+        ],
+        "extensions": {
+            "tool": "database_query",
+            "agent_id": "agent-6"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9038",
+        "category": "Traditional Cyber",
+        "incident_type": "Phishing Attack",
+        "severity": "Medium",
+        "affected_system": "Email Security Gateway",
+        "symptoms": [
+            "Suspicious email detected",
+            "Malicious attachment observed"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.248"
+        ],
+        "extensions": {
+            "attachment": "malicious.html",
+            "protocol": "SMTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9090",
+        "category": "AI Security",
+        "incident_type": "Sensitive Data Leakage",
+        "severity": "Critical",
+        "affected_system": "AI Application Gateway",
+        "symptoms": [
+            "Sensitive information detected in model output",
+            "Potential PII exposure"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.49"
+        ],
+        "extensions": {
+            "data_type": "PII",
+            "detection": "output_scanner"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9032",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.98"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 3734
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9012",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.149"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 4937
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9045",
+        "category": "Traditional Cyber",
+        "incident_type": "DDoS Attack",
+        "severity": "Critical",
+        "affected_system": "Web Server",
+        "symptoms": [
+            "Abnormal traffic spike",
+            "Service response degradation"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.111"
+        ],
+        "extensions": {
+            "request_count": 16500,
+            "protocol": "HTTP"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9093",
+        "category": "AI Security",
+        "incident_type": "Excessive Agent Permissions",
+        "severity": "Critical",
+        "affected_system": "AI Agent Platform",
+        "symptoms": [
+            "Agent accessed restricted capability",
+            "Permission boundary exceeded"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.176"
+        ],
+        "extensions": {
+            "agent_id": "agent-4",
+            "permission": "admin_access"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9014",
+        "category": "Traditional Cyber",
+        "incident_type": "Ransomware Attack",
+        "severity": "Critical",
+        "affected_system": "File Server",
+        "symptoms": [
+            "Rapid file encryption",
+            "Multiple files becoming inaccessible"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.46"
+        ],
+        "extensions": {
+            "encryption_detected": true,
+            "affected_files": 2079
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9030",
+        "category": "Traditional Cyber",
+        "incident_type": "Brute Force Attack",
+        "severity": "High",
+        "affected_system": "Internal VPN Gateway",
+        "symptoms": [
+            "Multiple failed SSH attempts",
+            "Burst authentication spikes"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.17"
+        ],
+        "extensions": {
+            "attempt_count": 103,
+            "protocol": "SSH"
+        }
+    },
+    {
+        "alert_id": "ALT-2026-9049",
+        "category": "Traditional Cyber",
+        "incident_type": "Brute Force Attack",
+        "severity": "High",
+        "affected_system": "Internal VPN Gateway",
+        "symptoms": [
+            "Multiple failed SSH attempts",
+            "Burst authentication spikes"
+        ],
+        "indicators_of_compromise": [
+            "198.51.100.174"
+        ],
+        "extensions": {
+            "attempt_count": 152,
+            "protocol": "SSH"
+        }
+    }
+]

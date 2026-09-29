@@ -1,0 +1,5374 @@
+[
+  {
+    "bundle_id": "CTX-2026-0001",
+    "incident_matches": [
+      {
+        "memory_id": "f1dca17a-f851-4b3a-9dc4-94e7ea6d830b",
+        "incident_id": "ALT-2026-9090",
+        "similarity_score": 0.4167,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "2bea6831-b07f-426b-9b0a-dcc5a5f8a4bb",
+        "incident_id": "ALT-2026-9071",
+        "similarity_score": 0.3639,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "be10bab9-f21e-4fc2-949e-3334fc4529fd",
+        "incident_id": "ALT-2026-9078",
+        "similarity_score": 0.2818,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "584da1b5-8830-4fbd-806b-bd3b529d0738",
+        "incident_id": "ALT-2026-9088",
+        "similarity_score": 0.2519,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "c68274d7-3f44-4ffd-9b44-2dffa8934bde",
+        "incident_id": "ALT-2026-9085",
+        "similarity_score": 0.2434,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0002",
+    "incident_matches": [
+      {
+        "memory_id": "dc3f19d0-99d4-45ef-af9e-6776e4223aee",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.5008,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.3064,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.2864,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.4016,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1255,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0003",
+    "incident_matches": [
+      {
+        "memory_id": "6b9d783b-d330-48da-bca0-d6e26e939457",
+        "incident_id": "ALT-2026-9023",
+        "similarity_score": 0.2455,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "ce6965fe-b787-476e-8144-e634c5b39b85",
+        "incident_id": "ALT-2026-9052",
+        "similarity_score": 0.237,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "5e39898d-32d6-4f32-abb9-a1fa80b871e8",
+        "incident_id": "ALT-2026-9009",
+        "similarity_score": 0.2355,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enforce MFA, reset compromised credentials, and invalidate affected session keys",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-004",
+        "title": "Credential Stuffing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0004",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2695,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.217,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "a1930b07-0902-4e30-8dbd-6e9f03d9fc81",
+        "incident_id": "ALT-2026-9064",
+        "similarity_score": 0.2138,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0005",
+    "incident_matches": [
+      {
+        "memory_id": "f1dca17a-f851-4b3a-9dc4-94e7ea6d830b",
+        "incident_id": "ALT-2026-9090",
+        "similarity_score": 0.3583,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "584da1b5-8830-4fbd-806b-bd3b529d0738",
+        "incident_id": "ALT-2026-9088",
+        "similarity_score": 0.2519,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "be10bab9-f21e-4fc2-949e-3334fc4529fd",
+        "incident_id": "ALT-2026-9078",
+        "similarity_score": 0.275,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "c68274d7-3f44-4ffd-9b44-2dffa8934bde",
+        "incident_id": "ALT-2026-9085",
+        "similarity_score": 0.239,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "3009a862-1768-4980-a8ec-039c7f13b159",
+        "incident_id": "ALT-2026-9100",
+        "similarity_score": 0.2375,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0006",
+    "incident_matches": [
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.2844,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "7a62fa25-83af-4850-8e55-d3dfb40f9f5c",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.2761,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "54a82d7f-5986-46ba-95d2-d7ff0fff5b64",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.265,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "2e7ea4f9-236a-480a-a038-cafff941e825",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.2579,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "8402f071-fdd9-41b8-8fde-fddc5f1a837f",
+        "incident_id": "ALT-2026-9075",
+        "similarity_score": 0.253,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0007",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.3239,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.4008,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "d76b5e23-99b5-4a63-9621-129a0bbcdbc9",
+        "incident_id": "ALT-2026-9070",
+        "similarity_score": 0.1234,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.123,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0008",
+    "incident_matches": [
+      {
+        "memory_id": "6fede96e-0dcf-4570-9f48-d8ee149daed8",
+        "incident_id": "ALT-2026-9099",
+        "similarity_score": 0.7562,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "baa71125-b10e-420f-97c2-8f8b734790f7",
+        "incident_id": "ALT-2026-9091",
+        "similarity_score": 0.2436,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "84d4ae6b-0e35-4f8e-ab93-0dd4b96caeb7",
+        "incident_id": "ALT-2026-9080",
+        "similarity_score": 0.24,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "55650d56-03b8-42c9-9b16-54c3f9baf8fb",
+        "incident_id": "ALT-2026-9077",
+        "similarity_score": 0.2333,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "f795d817-b92f-40c9-8a4d-24d0f483d3b2",
+        "incident_id": "ALT-2026-9097",
+        "similarity_score": 0.2307,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0009",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.3239,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.3064,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.3931,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1243,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0010",
+    "incident_matches": [
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.232,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2209,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "a1930b07-0902-4e30-8dbd-6e9f03d9fc81",
+        "incident_id": "ALT-2026-9064",
+        "similarity_score": 0.2112,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0011",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2987,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.2695,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.232,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0012",
+    "incident_matches": [
+      {
+        "memory_id": "6fede96e-0dcf-4570-9f48-d8ee149daed8",
+        "incident_id": "ALT-2026-9089",
+        "similarity_score": 0.5542,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "baa71125-b10e-420f-97c2-8f8b734790f7",
+        "incident_id": "ALT-2026-9091",
+        "similarity_score": 0.24,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "84d4ae6b-0e35-4f8e-ab93-0dd4b96caeb7",
+        "incident_id": "ALT-2026-9080",
+        "similarity_score": 0.2373,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "55650d56-03b8-42c9-9b16-54c3f9baf8fb",
+        "incident_id": "ALT-2026-9077",
+        "similarity_score": 0.2333,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "f795d817-b92f-40c9-8a4d-24d0f483d3b2",
+        "incident_id": "ALT-2026-9097",
+        "similarity_score": 0.2307,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0013",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2695,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.217,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2138,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0014",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.4114,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.3239,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.3958,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1238,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0015",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2987,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.2695,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "a1930b07-0902-4e30-8dbd-6e9f03d9fc81",
+        "incident_id": "ALT-2026-9064",
+        "similarity_score": 0.232,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0016",
+    "incident_matches": [
+      {
+        "memory_id": "12f490d6-07a5-487e-a378-54e0a6b67ca1",
+        "incident_id": "ALT-2026-9058",
+        "similarity_score": 0.2193,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0f64fb77-ef9a-498b-b2dc-330f23877fbb",
+        "incident_id": "ALT-2026-9040",
+        "similarity_score": 0.216,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "b50dac89-1279-467f-89b9-c2407bc19177",
+        "incident_id": "ALT-2026-9011",
+        "similarity_score": 0.215,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "1687919f-0259-4fa8-81eb-99c8dbae629f",
+        "incident_id": "ALT-2026-9006",
+        "similarity_score": 0.2146,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "dc2ef381-23b0-4d7f-a67c-06b49b850941",
+        "incident_id": "ALT-2026-9015",
+        "similarity_score": 0.2144,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0017",
+    "incident_matches": [
+      {
+        "memory_id": "3829177e-6fc8-4680-91c5-a71cc7ab8f12",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.1957,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1925,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1919,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a8024ad5-c7bf-4db0-80dd-1218cca8e644",
+        "incident_id": "ALT-2026-9013",
+        "similarity_score": 0.1913,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "e23a1e51-f05b-4ee4-9707-e464c6991f4d",
+        "incident_id": "ALT-2026-9031",
+        "similarity_score": 0.1889,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0018",
+    "incident_matches": [
+      {
+        "memory_id": "fb0265b0-c76e-4bf5-8d2f-a9013f66fef2",
+        "incident_id": "ALT-2026-9093",
+        "similarity_score": 0.3728,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      },
+      {
+        "memory_id": "a5768f9f-3309-4c10-84fa-0971910a3284",
+        "incident_id": "ALT-2026-9084",
+        "similarity_score": 0.2478,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Reduce privileges to least privilege and rotate credentials if excessive access was exercised",
+        "times_used": 3,
+        "successful_outcomes": 3,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent was granted broader permissions than required for its task",
+        "occurrence_count": 3
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-017",
+        "title": "Agent Permission Control Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0019",
+    "incident_matches": [
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.3064,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.391,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "d76b5e23-99b5-4a63-9621-129a0bbcdbc9",
+        "incident_id": "ALT-2026-9070",
+        "similarity_score": 0.1245,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1244,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0020",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2613,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2597,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "31765f99-3db5-4f58-b094-8cdb274e5180",
+        "incident_id": "ALT-2026-9087",
+        "similarity_score": 0.2583,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0021",
+    "incident_matches": [
+      {
+        "memory_id": "12f490d6-07a5-487e-a378-54e0a6b67ca1",
+        "incident_id": "ALT-2026-9058",
+        "similarity_score": 0.2165,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0f64fb77-ef9a-498b-b2dc-330f23877fbb",
+        "incident_id": "ALT-2026-9040",
+        "similarity_score": 0.2154,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "1687919f-0259-4fa8-81eb-99c8dbae629f",
+        "incident_id": "ALT-2026-9006",
+        "similarity_score": 0.2144,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0903d778-84a6-4b57-b063-4bce4beeb06c",
+        "incident_id": "ALT-2026-9044",
+        "similarity_score": 0.2143,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "dc2ef381-23b0-4d7f-a67c-06b49b850941",
+        "incident_id": "ALT-2026-9015",
+        "similarity_score": 0.2138,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0022",
+    "incident_matches": [
+      {
+        "memory_id": "0fc4a008-3d8b-4b82-ac62-661a185f3dfb",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.3239,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "5536cab7-f8a0-4b76-bfbb-9fe2c235688b",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.2864,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1915,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.2484,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9010",
+        "similarity_score": 0.3958,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0023",
+    "incident_matches": [
+      {
+        "memory_id": "4552e13f-00d6-4101-ac75-25394baf2584",
+        "incident_id": "ALT-2026-9055",
+        "similarity_score": 0.2761,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "ce6965fe-b787-476e-8144-e634c5b39b85",
+        "incident_id": "ALT-2026-9052",
+        "similarity_score": 0.2553,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "5e39898d-32d6-4f32-abb9-a1fa80b871e8",
+        "incident_id": "ALT-2026-9009",
+        "similarity_score": 0.2467,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enforce MFA, reset compromised credentials, and invalidate affected session keys",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-004",
+        "title": "Credential Stuffing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0024",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.4723,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1948,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "ddee74dc-a8a4-4ad1-8f83-6ea1b005a79f",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.1932,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1907,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1902,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0025",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9010",
+        "similarity_score": 0.7636,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "feffb0ad-1c19-4c7a-aff0-a8aa075532e2",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.2947,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1866,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2516,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.2467,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0026",
+    "incident_matches": [
+      {
+        "memory_id": "61485941-d95b-4cd5-82bd-000f74b78ef8",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.2761,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "54a82d7f-5986-46ba-95d2-d7ff0fff5b64",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.265,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "2e7ea4f9-236a-480a-a038-cafff941e825",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.2579,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.2553,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "33252c48-6585-41d0-8a49-c2da5829f97e",
+        "incident_id": "ALT-2026-9075",
+        "similarity_score": 0.2511,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0027",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.5976,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.2867,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2604,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3364,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "0055b407-d24e-4308-af06-2019a7137455",
+        "incident_id": "ALT-2026-9051",
+        "similarity_score": 0.2651,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0028",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.7636,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "0fc4a008-3d8b-4b82-ac62-661a185f3dfb",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.2801,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1795,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2489,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.2464,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0029",
+    "incident_matches": [
+      {
+        "memory_id": "74143c4c-7080-42b1-8515-7811e616cee9",
+        "incident_id": "ALT-2026-9030",
+        "similarity_score": 0.1364,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      },
+      {
+        "memory_id": "5d4eafb1-c52a-4f88-b281-163027ec346e",
+        "incident_id": "ALT-2026-9050",
+        "similarity_score": 0.2113,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable MFA, rate-limit authentication, and block offending source addresses",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Password-based authentication exposed to automated credential guessing",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-003",
+        "title": "SSH & VPN Brute Force Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0030",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.5976,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.4226,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.275,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3329,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "0055b407-d24e-4308-af06-2019a7137455",
+        "incident_id": "ALT-2026-9051",
+        "similarity_score": 0.2635,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0031",
+    "incident_matches": [
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.4226,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.2667,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2604,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3314,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "0055b407-d24e-4308-af06-2019a7137455",
+        "incident_id": "ALT-2026-9051",
+        "similarity_score": 0.2643,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0032",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.4701,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1957,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1948,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "ddee74dc-a8a4-4ad1-8f83-6ea1b005a79f",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.1907,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1893,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0033",
+    "incident_matches": [
+      {
+        "memory_id": "6fede96e-0dcf-4570-9f48-d8ee149daed8",
+        "incident_id": "ALT-2026-9089",
+        "similarity_score": 0.7562,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "a7c32e5c-ebd9-4ab5-9b87-fc89d26aaa54",
+        "incident_id": "ALT-2026-9099",
+        "similarity_score": 0.2417,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "84d4ae6b-0e35-4f8e-ab93-0dd4b96caeb7",
+        "incident_id": "ALT-2026-9080",
+        "similarity_score": 0.24,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "55650d56-03b8-42c9-9b16-54c3f9baf8fb",
+        "incident_id": "ALT-2026-9077",
+        "similarity_score": 0.2361,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "f795d817-b92f-40c9-8a4d-24d0f483d3b2",
+        "incident_id": "ALT-2026-9097",
+        "similarity_score": 0.2333,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0034",
+    "incident_matches": [
+      {
+        "memory_id": "84d4ae6b-0e35-4f8e-ab93-0dd4b96caeb7",
+        "incident_id": "ALT-2026-9080",
+        "similarity_score": 0.3333,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "baa71125-b10e-420f-97c2-8f8b734790f7",
+        "incident_id": "ALT-2026-9091",
+        "similarity_score": 0.2385,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "a7c32e5c-ebd9-4ab5-9b87-fc89d26aaa54",
+        "incident_id": "ALT-2026-9099",
+        "similarity_score": 0.2319,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "8f84c71a-41d0-45d5-996e-7c3e7cf7d4e9",
+        "incident_id": "ALT-2026-9089",
+        "similarity_score": 0.2267,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "f795d817-b92f-40c9-8a4d-24d0f483d3b2",
+        "incident_id": "ALT-2026-9097",
+        "similarity_score": 0.2244,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0035",
+    "incident_matches": [
+      {
+        "memory_id": "9f6a35da-c141-4afa-b50f-daa63c86d1e9",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.5989,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.2844,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "2e7ea4f9-236a-480a-a038-cafff941e825",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.2553,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "33252c48-6585-41d0-8a49-c2da5829f97e",
+        "incident_id": "ALT-2026-9075",
+        "similarity_score": 0.253,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.2494,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0036",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.5976,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.4226,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.275,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2604,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3364,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0037",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.5307,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1948,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1925,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1898,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a8024ad5-c7bf-4db0-80dd-1218cca8e644",
+        "incident_id": "ALT-2026-9013",
+        "similarity_score": 0.1889,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0038",
+    "incident_matches": [
+      {
+        "memory_id": "600e8728-dc46-4495-91a0-07591bb2da97",
+        "incident_id": "ALT-2026-9034",
+        "similarity_score": 0.3967,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable MFA, rate-limit authentication, and block offending source addresses",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Password-based authentication exposed to automated credential guessing",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-003",
+        "title": "SSH & VPN Brute Force Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0039",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2987,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.232,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2209,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.217,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "a1930b07-0902-4e30-8dbd-6e9f03d9fc81",
+        "incident_id": "ALT-2026-9064",
+        "similarity_score": 0.2138,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0040",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.3523,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.3159,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2162,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.2123,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "8c411b9b-4d22-4624-822f-339e41e13ae8",
+        "incident_id": "ALT-2026-9047",
+        "similarity_score": 0.2489,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0041",
+    "incident_matches": [
+      {
+        "memory_id": "12f490d6-07a5-487e-a378-54e0a6b67ca1",
+        "incident_id": "ALT-2026-9058",
+        "similarity_score": 0.2185,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0f64fb77-ef9a-498b-b2dc-330f23877fbb",
+        "incident_id": "ALT-2026-9040",
+        "similarity_score": 0.2158,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "2a0d3347-e7b7-4ca9-b694-7597509e2fde",
+        "incident_id": "ALT-2026-9011",
+        "similarity_score": 0.215,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0903d778-84a6-4b57-b063-4bce4beeb06c",
+        "incident_id": "ALT-2026-9044",
+        "similarity_score": 0.2146,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "1687919f-0259-4fa8-81eb-99c8dbae629f",
+        "incident_id": "ALT-2026-9006",
+        "similarity_score": 0.2143,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0042",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2688,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2597,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "31765f99-3db5-4f58-b094-8cdb274e5180",
+        "incident_id": "ALT-2026-9087",
+        "similarity_score": 0.259,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0043",
+    "incident_matches": [
+      {
+        "memory_id": "f1dca17a-f851-4b3a-9dc4-94e7ea6d830b",
+        "incident_id": "ALT-2026-9090",
+        "similarity_score": 0.4167,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "2bea6831-b07f-426b-9b0a-dcc5a5f8a4bb",
+        "incident_id": "ALT-2026-9071",
+        "similarity_score": 0.3688,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "584da1b5-8830-4fbd-806b-bd3b529d0738",
+        "incident_id": "ALT-2026-9088",
+        "similarity_score": 0.2519,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "c68274d7-3f44-4ffd-9b44-2dffa8934bde",
+        "incident_id": "ALT-2026-9085",
+        "similarity_score": 0.2425,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "3009a862-1768-4980-a8ec-039c7f13b159",
+        "incident_id": "ALT-2026-9100",
+        "similarity_score": 0.2375,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0044",
+    "incident_matches": [
+      {
+        "memory_id": "6b9d783b-d330-48da-bca0-d6e26e939457",
+        "incident_id": "ALT-2026-9023",
+        "similarity_score": 0.2844,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "4552e13f-00d6-4101-ac75-25394baf2584",
+        "incident_id": "ALT-2026-9055",
+        "similarity_score": 0.2611,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "5e39898d-32d6-4f32-abb9-a1fa80b871e8",
+        "incident_id": "ALT-2026-9009",
+        "similarity_score": 0.2428,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enforce MFA, reset compromised credentials, and invalidate affected session keys",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-004",
+        "title": "Credential Stuffing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0045",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9086",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2632,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2613,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.259,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0046",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.7636,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "0fc4a008-3d8b-4b82-ac62-661a185f3dfb",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.3064,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1866,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2523,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.248,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0047",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.3643,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.3351,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.2556,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2517,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "0055b407-d24e-4308-af06-2019a7137455",
+        "incident_id": "ALT-2026-9051",
+        "similarity_score": 0.2635,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0048",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.4114,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.3239,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.4091,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "d76b5e23-99b5-4a63-9621-129a0bbcdbc9",
+        "incident_id": "ALT-2026-9070",
+        "similarity_score": 0.1242,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0049",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.2648,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.2928,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2006,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.1957,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.1893,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0050",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.5273,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2648,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.221,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.2042,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "8c411b9b-4d22-4624-822f-339e41e13ae8",
+        "incident_id": "ALT-2026-9047",
+        "similarity_score": 0.2509,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0051",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.5886,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "0fc4a008-3d8b-4b82-ac62-661a185f3dfb",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.3064,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1977,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2539,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0052",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.357,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.2209,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "a1930b07-0902-4e30-8dbd-6e9f03d9fc81",
+        "incident_id": "ALT-2026-9064",
+        "similarity_score": 0.217,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0053",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2671,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2604,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2597,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0054",
+    "incident_matches": [
+      {
+        "memory_id": "12f490d6-07a5-487e-a378-54e0a6b67ca1",
+        "incident_id": "ALT-2026-9058",
+        "similarity_score": 0.2181,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "40b183a5-8a25-419a-a2e8-0b7b5b71ec18",
+        "incident_id": "ALT-2026-9044",
+        "similarity_score": 0.2148,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "1687919f-0259-4fa8-81eb-99c8dbae629f",
+        "incident_id": "ALT-2026-9006",
+        "similarity_score": 0.2144,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "2ff9b06a-1e2f-40bd-ab81-42a1a7f64cdb",
+        "incident_id": "ALT-2026-9015",
+        "similarity_score": 0.5097,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "2a0d3347-e7b7-4ca9-b694-7597509e2fde",
+        "incident_id": "ALT-2026-9011",
+        "similarity_score": 0.2141,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0055",
+    "incident_matches": [
+      {
+        "memory_id": "55650d56-03b8-42c9-9b16-54c3f9baf8fb",
+        "incident_id": "ALT-2026-9077",
+        "similarity_score": 0.2361,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "baa71125-b10e-420f-97c2-8f8b734790f7",
+        "incident_id": "ALT-2026-9091",
+        "similarity_score": 0.2333,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "a7c32e5c-ebd9-4ab5-9b87-fc89d26aaa54",
+        "incident_id": "ALT-2026-9099",
+        "similarity_score": 0.2276,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "8f84c71a-41d0-45d5-996e-7c3e7cf7d4e9",
+        "incident_id": "ALT-2026-9089",
+        "similarity_score": 0.2256,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "f795d817-b92f-40c9-8a4d-24d0f483d3b2",
+        "incident_id": "ALT-2026-9097",
+        "similarity_score": 0.2234,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0056",
+    "incident_matches": [
+      {
+        "memory_id": "2ff9b06a-1e2f-40bd-ab81-42a1a7f64cdb",
+        "incident_id": "ALT-2026-9015",
+        "similarity_score": 0.7068,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0f64fb77-ef9a-498b-b2dc-330f23877fbb",
+        "incident_id": "ALT-2026-9040",
+        "similarity_score": 0.216,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "2a0d3347-e7b7-4ca9-b694-7597509e2fde",
+        "incident_id": "ALT-2026-9011",
+        "similarity_score": 0.2146,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "1687919f-0259-4fa8-81eb-99c8dbae629f",
+        "incident_id": "ALT-2026-9006",
+        "similarity_score": 0.2143,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0903d778-84a6-4b57-b063-4bce4beeb06c",
+        "incident_id": "ALT-2026-9044",
+        "similarity_score": 0.2141,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0057",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.357,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.2209,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0058",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.4226,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.3643,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "2bc94fce-86d5-4068-9910-c5dc2019604e",
+        "incident_id": "ALT-2026-9028",
+        "similarity_score": 0.2604,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2556,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3345,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0059",
+    "incident_matches": [
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2939,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.2648,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.2356,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.3097,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.2042,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0060",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9057",
+        "similarity_score": 0.7932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "ed39ef1f-93f2-4a79-88cf-4fba1572ccef",
+        "incident_id": "ALT-2026-9007",
+        "similarity_score": 0.1991,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "0b9f77f1-c03f-48a8-bbe2-45ca89f7facd",
+        "incident_id": "ALT-2026-9032",
+        "similarity_score": 0.1939,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "b23bbf2b-b10a-4df9-87c4-cf630cbab74f",
+        "incident_id": "ALT-2026-9014",
+        "similarity_score": 0.1932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "e648db82-d799-4ce6-91f2-32842b39c1b7",
+        "incident_id": "ALT-2026-9012",
+        "similarity_score": 0.1925,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0061",
+    "incident_matches": [
+      {
+        "memory_id": "6fede96e-0dcf-4570-9f48-d8ee149daed8",
+        "incident_id": "ALT-2026-9089",
+        "similarity_score": 0.4451,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "baa71125-b10e-420f-97c2-8f8b734790f7",
+        "incident_id": "ALT-2026-9091",
+        "similarity_score": 0.2458,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "a7c32e5c-ebd9-4ab5-9b87-fc89d26aaa54",
+        "incident_id": "ALT-2026-9099",
+        "similarity_score": 0.2417,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "84d4ae6b-0e35-4f8e-ab93-0dd4b96caeb7",
+        "incident_id": "ALT-2026-9080",
+        "similarity_score": 0.24,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      },
+      {
+        "memory_id": "55650d56-03b8-42c9-9b16-54c3f9baf8fb",
+        "incident_id": "ALT-2026-9077",
+        "similarity_score": 0.2326,
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the malicious input and strengthen instruction isolation and input filtering",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Untrusted instructions attempted to override trusted model or system behavior",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-014",
+        "title": "Prompt Injection Defense Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0062",
+    "incident_matches": [
+      {
+        "memory_id": "76228b84-fcd7-428b-a398-0fb77d2232d7",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.7457,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.2698,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "7a62fa25-83af-4850-8e55-d3dfb40f9f5c",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.265,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "54a82d7f-5986-46ba-95d2-d7ff0fff5b64",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.253,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.248,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0063",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.5273,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2939,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.3534,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.1991,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "8c411b9b-4d22-4624-822f-339e41e13ae8",
+        "incident_id": "ALT-2026-9047",
+        "similarity_score": 0.2509,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0064",
+    "incident_matches": [
+      {
+        "memory_id": "4552e13f-00d6-4101-ac75-25394baf2584",
+        "incident_id": "ALT-2026-9055",
+        "similarity_score": 0.2761,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "6b9d783b-d330-48da-bca0-d6e26e939457",
+        "incident_id": "ALT-2026-9023",
+        "similarity_score": 0.2698,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "ce6965fe-b787-476e-8144-e634c5b39b85",
+        "incident_id": "ALT-2026-9052",
+        "similarity_score": 0.2455,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "5e39898d-32d6-4f32-abb9-a1fa80b871e8",
+        "incident_id": "ALT-2026-9009",
+        "similarity_score": 0.2413,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enforce MFA, reset compromised credentials, and invalidate affected session keys",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-004",
+        "title": "Credential Stuffing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0065",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2613,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2604,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2583,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0066",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2987,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.2209,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0067",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.2947,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.2864,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "9a91d19b-aece-4484-a604-96302d40d07a",
+        "incident_id": "ALT-2026-9025",
+        "similarity_score": 0.2753,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1229,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "55dac487-f1a9-4f45-b4ed-c4d3a414a30b",
+        "incident_id": "ALT-2026-9056",
+        "similarity_score": 0.1228,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0068",
+    "incident_matches": [
+      {
+        "memory_id": "12f490d6-07a5-487e-a378-54e0a6b67ca1",
+        "incident_id": "ALT-2026-9058",
+        "similarity_score": 0.2214,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0f64fb77-ef9a-498b-b2dc-330f23877fbb",
+        "incident_id": "ALT-2026-9040",
+        "similarity_score": 0.2174,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "2a0d3347-e7b7-4ca9-b694-7597509e2fde",
+        "incident_id": "ALT-2026-9011",
+        "similarity_score": 0.2154,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "0903d778-84a6-4b57-b063-4bce4beeb06c",
+        "incident_id": "ALT-2026-9044",
+        "similarity_score": 0.2148,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      },
+      {
+        "memory_id": "dc2ef381-23b0-4d7f-a67c-06b49b850941",
+        "incident_id": "ALT-2026-9015",
+        "similarity_score": 0.2144,
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block malicious requests, patch parameterized queries, and rotate affected secrets",
+        "times_used": 6,
+        "successful_outcomes": 6,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Unsanitized user input reached database queries through a vulnerable application endpoint",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-005",
+        "title": "Web SQL Injection Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0069",
+    "incident_matches": [
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.3136,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "7a62fa25-83af-4850-8e55-d3dfb40f9f5c",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.2961,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "54a82d7f-5986-46ba-95d2-d7ff0fff5b64",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.2698,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.2579,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "8402f071-fdd9-41b8-8fde-fddc5f1a837f",
+        "incident_id": "ALT-2026-9075",
+        "similarity_score": 0.2553,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0070",
+    "incident_matches": [
+      {
+        "memory_id": "64e4bd19-e7e6-4387-933f-ebfcce5a3875",
+        "incident_id": "ALT-2026-9027",
+        "similarity_score": 0.3643,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "ec60d5f2-a97f-433c-af37-e2a2708204ab",
+        "incident_id": "ALT-2026-9036",
+        "similarity_score": 0.3351,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "6daf4ae4-b69c-483c-aecf-a3cfa0270d06",
+        "incident_id": "ALT-2026-9060",
+        "similarity_score": 0.2556,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "c688ee9a-6cc5-4737-854d-86dce05e5f48",
+        "incident_id": "ALT-2026-9068",
+        "similarity_score": 0.3387,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      },
+      {
+        "memory_id": "0055b407-d24e-4308-af06-2019a7137455",
+        "incident_id": "ALT-2026-9051",
+        "similarity_score": 0.2628,
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate the endpoint, terminate the malicious process, remove the artifact, and rescan",
+        "times_used": 7,
+        "successful_outcomes": 5,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.7143
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious or suspicious executable gained execution on an endpoint",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-008",
+        "title": "Endpoint Malware Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0071",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.8227,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1957,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1939,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "ddee74dc-a8a4-4ad1-8f83-6ea1b005a79f",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.1932,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1907,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0072",
+    "incident_matches": [
+      {
+        "memory_id": "780ec71b-46a0-424e-9c76-1e001b7b0e42",
+        "incident_id": "ALT-2026-9005",
+        "similarity_score": 0.2987,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "3e3a6548-9b4a-42d8-9cc7-756a5437020a",
+        "incident_id": "ALT-2026-9043",
+        "similarity_score": 0.252,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "180f8fdc-9786-474c-a007-3a20210c95d6",
+        "incident_id": "ALT-2026-9026",
+        "similarity_score": 0.2403,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "6e669339-8f12-4a11-971b-fc75f4d8ebd9",
+        "incident_id": "ALT-2026-9016",
+        "similarity_score": 0.232,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      },
+      {
+        "memory_id": "24b5a145-acfc-40f2-8af2-cc9c99c80dbb",
+        "incident_id": "ALT-2026-9024",
+        "similarity_score": 0.2258,
+        "root_cause": "An external source performed reconnaissance against exposed network services"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the source, tighten firewall exposure, and monitor the affected service ports",
+        "times_used": 10,
+        "successful_outcomes": 8,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An external source performed reconnaissance against exposed network services",
+        "occurrence_count": 10
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-011",
+        "title": "Network Reconnaissance Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0073",
+    "incident_matches": [
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.2844,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "7a62fa25-83af-4850-8e55-d3dfb40f9f5c",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.2761,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "54a82d7f-5986-46ba-95d2-d7ff0fff5b64",
+        "incident_id": "ALT-2026-9094",
+        "similarity_score": 0.265,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "2e7ea4f9-236a-480a-a038-cafff941e825",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.2579,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.2553,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0074",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2632,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2597,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "31765f99-3db5-4f58-b094-8cdb274e5180",
+        "incident_id": "ALT-2026-9087",
+        "similarity_score": 0.2583,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0075",
+    "incident_matches": [
+      {
+        "memory_id": "6b9d783b-d330-48da-bca0-d6e26e939457",
+        "incident_id": "ALT-2026-9023",
+        "similarity_score": 0.3136,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "4552e13f-00d6-4101-ac75-25394baf2584",
+        "incident_id": "ALT-2026-9055",
+        "similarity_score": 0.2844,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      },
+      {
+        "memory_id": "ce6965fe-b787-476e-8144-e634c5b39b85",
+        "incident_id": "ALT-2026-9052",
+        "similarity_score": 0.2579,
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enforce MFA, reset compromised credentials, and invalidate affected session keys",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Credential stuffing using credentials from a leaked credential dump",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-004",
+        "title": "Credential Stuffing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0076",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.5273,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.3826,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.2023,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.1957,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "8c411b9b-4d22-4624-822f-339e41e13ae8",
+        "incident_id": "ALT-2026-9047",
+        "similarity_score": 0.2516,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0077",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.5307,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1939,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "ddee74dc-a8a4-4ad1-8f83-6ea1b005a79f",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.1902,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "3cd08804-b077-4427-81f9-1df6f5e942fb",
+        "incident_id": "ALT-2026-9062",
+        "similarity_score": 0.1889,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a8024ad5-c7bf-4db0-80dd-1218cca8e644",
+        "incident_id": "ALT-2026-9013",
+        "similarity_score": 0.1882,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0078",
+    "incident_matches": [
+      {
+        "memory_id": "99a69a5e-eb20-462a-af67-a0f0afc25da5",
+        "incident_id": "ALT-2026-9059",
+        "similarity_score": 0.5273,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.4409,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2648,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.2123,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.2042,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0079",
+    "incident_matches": [
+      {
+        "memory_id": "464f2cd3-345c-4435-be0a-5bb39e8395ba",
+        "incident_id": "ALT-2026-9019",
+        "similarity_score": 0.3534,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "1817ed1f-eb0c-4f1f-8ed4-4f9da1d6ac8f",
+        "incident_id": "ALT-2026-9022",
+        "similarity_score": 0.2473,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "fedde028-b4f8-42c0-9364-0d6011a3008e",
+        "incident_id": "ALT-2026-9041",
+        "similarity_score": 0.2356,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "7ef4c7d9-9eea-4437-b3c8-0ed1cfc4b509",
+        "incident_id": "ALT-2026-9039",
+        "similarity_score": 0.2023,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      },
+      {
+        "memory_id": "8c411b9b-4d22-4624-822f-339e41e13ae8",
+        "incident_id": "ALT-2026-9047",
+        "similarity_score": 0.2516,
+        "root_cause": "A cloud IAM policy granted broader access than the workload required"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Revert the policy, enforce least privilege, and audit recent IAM changes",
+        "times_used": 8,
+        "successful_outcomes": 6,
+        "failed_outcomes": 2,
+        "empirical_success_rate": 0.75
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A cloud IAM policy granted broader access than the workload required",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-012",
+        "title": "Cloud IAM Hardening Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0080",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2671,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2656,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2643,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "31765f99-3db5-4f58-b094-8cdb274e5180",
+        "incident_id": "ALT-2026-9087",
+        "similarity_score": 0.259,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0081",
+    "incident_matches": [
+      {
+        "memory_id": "ff2f166b-1f9b-4330-b1f2-1cb73f12c46b",
+        "incident_id": "ALT-2026-9069",
+        "similarity_score": 0.4114,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "57883c92-febd-4084-b21d-6a7df058b7e6",
+        "incident_id": "ALT-2026-9003",
+        "similarity_score": 0.353,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "73c711a4-9c9b-4be0-a989-a86e323c4cbf",
+        "incident_id": "ALT-2026-9001",
+        "similarity_score": 0.3938,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "f2980441-f060-45ba-ad11-ccb843b456a9",
+        "incident_id": "ALT-2026-9042",
+        "similarity_score": 0.1252,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      },
+      {
+        "memory_id": "d76b5e23-99b5-4a63-9621-129a0bbcdbc9",
+        "incident_id": "ALT-2026-9070",
+        "similarity_score": 0.1249,
+        "root_cause": "A compromised or abused identity obtained access to a protected resource"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Disable the affected account, reset credentials, enforce MFA, and review access activity",
+        "times_used": 8,
+        "successful_outcomes": 8,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A compromised or abused identity obtained access to a protected resource",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-010",
+        "title": "Unauthorized Access Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0082",
+    "incident_matches": [
+      {
+        "memory_id": "100f9aa8-7f32-4568-a1c2-d5a3de0cf657",
+        "incident_id": "ALT-2026-9082",
+        "similarity_score": 0.675,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "7b18c9e1-b606-49cd-946d-cb800c49dcf2",
+        "incident_id": "ALT-2026-9095",
+        "similarity_score": 0.2632,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "231bdab9-ac78-4fb1-be05-96185918ac38",
+        "incident_id": "ALT-2026-9092",
+        "similarity_score": 0.2622,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "b4d836c6-1ef9-4d78-8b4f-125026f7e46e",
+        "incident_id": "ALT-2026-9074",
+        "similarity_score": 0.2613,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      },
+      {
+        "memory_id": "0549307d-ec2f-48a8-8f0d-8269fa2a7b0b",
+        "incident_id": "ALT-2026-9073",
+        "similarity_score": 0.2597,
+        "root_cause": "An agent requested a tool action outside the approved security policy"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists, and review the agent's authorization scope",
+        "times_used": 8,
+        "successful_outcomes": 4,
+        "failed_outcomes": 4,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An agent requested a tool action outside the approved security policy",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-016",
+        "title": "Unsafe Tool Invocation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0083",
+    "incident_matches": [
+      {
+        "memory_id": "f1dca17a-f851-4b3a-9dc4-94e7ea6d830b",
+        "incident_id": "ALT-2026-9090",
+        "similarity_score": 0.4167,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "2bea6831-b07f-426b-9b0a-dcc5a5f8a4bb",
+        "incident_id": "ALT-2026-9071",
+        "similarity_score": 0.3688,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "be10bab9-f21e-4fc2-949e-3334fc4529fd",
+        "incident_id": "ALT-2026-9078",
+        "similarity_score": 0.2792,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "c68274d7-3f44-4ffd-9b44-2dffa8934bde",
+        "incident_id": "ALT-2026-9085",
+        "similarity_score": 0.2425,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "3009a862-1768-4980-a8ec-039c7f13b159",
+        "incident_id": "ALT-2026-9100",
+        "similarity_score": 0.2342,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0084",
+    "incident_matches": [
+      {
+        "memory_id": "fb0265b0-c76e-4bf5-8d2f-a9013f66fef2",
+        "incident_id": "ALT-2026-9093",
+        "similarity_score": 0.3145,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      },
+      {
+        "memory_id": "355dfa2a-618d-428b-8c60-ba09e0b26b51",
+        "incident_id": "ALT-2026-9076",
+        "similarity_score": 0.2678,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Reduce privileges to least privilege and rotate credentials if excessive access was exercised",
+        "times_used": 3,
+        "successful_outcomes": 3,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent was granted broader permissions than required for its task",
+        "occurrence_count": 3
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-017",
+        "title": "Agent Permission Control Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0085",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9061",
+        "similarity_score": 0.4525,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "ed39ef1f-93f2-4a79-88cf-4fba1572ccef",
+        "incident_id": "ALT-2026-9007",
+        "similarity_score": 0.1979,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "e648db82-d799-4ce6-91f2-32842b39c1b7",
+        "incident_id": "ALT-2026-9012",
+        "similarity_score": 0.1932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "0b9f77f1-c03f-48a8-bbe2-45ca89f7facd",
+        "incident_id": "ALT-2026-9032",
+        "similarity_score": 0.1919,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "b23bbf2b-b10a-4df9-87c4-cf630cbab74f",
+        "incident_id": "ALT-2026-9014",
+        "similarity_score": 0.1907,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0086",
+    "incident_matches": [
+      {
+        "memory_id": "600e8728-dc46-4495-91a0-07591bb2da97",
+        "incident_id": "ALT-2026-9050",
+        "similarity_score": 0.3997,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      },
+      {
+        "memory_id": "74143c4c-7080-42b1-8515-7811e616cee9",
+        "incident_id": "ALT-2026-9030",
+        "similarity_score": 0.135,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable MFA, rate-limit authentication, and block offending source addresses",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Password-based authentication exposed to automated credential guessing",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-003",
+        "title": "SSH & VPN Brute Force Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0087",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.7636,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "feffb0ad-1c19-4c7a-aff0-a8aa075532e2",
+        "incident_id": "ALT-2026-9038",
+        "similarity_score": 0.2864,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2493,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.2477,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0088",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9061",
+        "similarity_score": 0.7932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "e648db82-d799-4ce6-91f2-32842b39c1b7",
+        "incident_id": "ALT-2026-9012",
+        "similarity_score": 0.1925,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "0b9f77f1-c03f-48a8-bbe2-45ca89f7facd",
+        "incident_id": "ALT-2026-9032",
+        "similarity_score": 0.1919,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "b23bbf2b-b10a-4df9-87c4-cf630cbab74f",
+        "incident_id": "ALT-2026-9014",
+        "similarity_score": 0.1913,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "8b6b7981-872a-4c0e-b7e2-047a8f8c58e8",
+        "incident_id": "ALT-2026-9057",
+        "similarity_score": 0.1893,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0089",
+    "incident_matches": [
+      {
+        "memory_id": "f1dca17a-f851-4b3a-9dc4-94e7ea6d830b",
+        "incident_id": "ALT-2026-9090",
+        "similarity_score": 0.4167,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "2bea6831-b07f-426b-9b0a-dcc5a5f8a4bb",
+        "incident_id": "ALT-2026-9071",
+        "similarity_score": 0.3688,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "be10bab9-f21e-4fc2-949e-3334fc4529fd",
+        "incident_id": "ALT-2026-9078",
+        "similarity_score": 0.2818,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "584da1b5-8830-4fbd-806b-bd3b529d0738",
+        "incident_id": "ALT-2026-9088",
+        "similarity_score": 0.2519,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "3009a862-1768-4980-a8ec-039c7f13b159",
+        "incident_id": "ALT-2026-9100",
+        "similarity_score": 0.239,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0090",
+    "incident_matches": [
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.8227,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.2189,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.2185,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "ddee74dc-a8a4-4ad1-8f83-6ea1b005a79f",
+        "incident_id": "ALT-2026-9037",
+        "similarity_score": 0.2178,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "d52955b5-5fe6-4422-8866-4afc2e9070ca",
+        "incident_id": "ALT-2026-9013",
+        "similarity_score": 0.2163,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0091",
+    "incident_matches": [
+      {
+        "memory_id": "c2846a66-80b7-4966-a418-bb0731536f4b",
+        "incident_id": "ALT-2026-9079",
+        "similarity_score": 0.2961,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "7a62fa25-83af-4850-8e55-d3dfb40f9f5c",
+        "incident_id": "ALT-2026-9081",
+        "similarity_score": 0.2844,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "2e7ea4f9-236a-480a-a038-cafff941e825",
+        "incident_id": "ALT-2026-9098",
+        "similarity_score": 0.2579,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "8402f071-fdd9-41b8-8fde-fddc5f1a837f",
+        "incident_id": "ALT-2026-9075",
+        "similarity_score": 0.2553,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      },
+      {
+        "memory_id": "e6a96a67-79e3-440a-b1a7-85b65ead6f67",
+        "incident_id": "ALT-2026-9096",
+        "similarity_score": 0.2511,
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Block the invocation, enforce tool allowlists and policy checks, and review agent permissions",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent attempted to invoke a tool outside its approved workflow",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-015",
+        "title": "AI Tool Abuse Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0092",
+    "incident_matches": [
+      {
+        "memory_id": "a18b2809-436f-46da-9bbd-f859b29bdc28",
+        "incident_id": "ALT-2026-9065",
+        "similarity_score": 0.5886,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "129a37b2-fed5-445b-8c29-2039bbfa6f80",
+        "incident_id": "ALT-2026-9035",
+        "similarity_score": 0.1769,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "d0ccd493-4cdf-43cf-8c98-2cd17ebfc60d",
+        "incident_id": "ALT-2026-9002",
+        "similarity_score": 0.2473,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      },
+      {
+        "memory_id": "dffd7291-7394-4ec0-b954-fb5ab83d8b65",
+        "incident_id": "ALT-2026-9017",
+        "similarity_score": 0.2458,
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Quarantine related messages, block sender infrastructure, and reset impacted credentials",
+        "times_used": 7,
+        "successful_outcomes": 6,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8571
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "A malicious social-engineering message delivered a link or attachment to a user",
+        "occurrence_count": 7
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-007",
+        "title": "Phishing Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0093",
+    "incident_matches": [
+      {
+        "memory_id": "2bea6831-b07f-426b-9b0a-dcc5a5f8a4bb",
+        "incident_id": "ALT-2026-9071",
+        "similarity_score": 0.3688,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "be10bab9-f21e-4fc2-949e-3334fc4529fd",
+        "incident_id": "ALT-2026-9078",
+        "similarity_score": 0.2818,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "584da1b5-8830-4fbd-806b-bd3b529d0738",
+        "incident_id": "ALT-2026-9088",
+        "similarity_score": 0.2519,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "c68274d7-3f44-4ffd-9b44-2dffa8934bde",
+        "incident_id": "ALT-2026-9085",
+        "similarity_score": 0.2444,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      },
+      {
+        "memory_id": "3009a862-1768-4980-a8ec-039c7f13b159",
+        "incident_id": "ALT-2026-9100",
+        "similarity_score": 0.2402,
+        "root_cause": "Sensitive information was exposed through an application or model output path"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Redact or block the exposed data, revoke exposed secrets, and tighten data controls",
+        "times_used": 6,
+        "successful_outcomes": 5,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8333
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Sensitive information was exposed through an application or model output path",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-013",
+        "title": "Sensitive Data Leakage Response Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0094",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9061",
+        "similarity_score": 0.7932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "ed39ef1f-93f2-4a79-88cf-4fba1572ccef",
+        "incident_id": "ALT-2026-9007",
+        "similarity_score": 0.1979,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "e648db82-d799-4ce6-91f2-32842b39c1b7",
+        "incident_id": "ALT-2026-9012",
+        "similarity_score": 0.1932,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "b23bbf2b-b10a-4df9-87c4-cf630cbab74f",
+        "incident_id": "ALT-2026-9014",
+        "similarity_score": 0.1902,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "8b6b7981-872a-4c0e-b7e2-047a8f8c58e8",
+        "incident_id": "ALT-2026-9057",
+        "similarity_score": 0.1893,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0095",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9061",
+        "similarity_score": 0.4486,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "ed39ef1f-93f2-4a79-88cf-4fba1572ccef",
+        "incident_id": "ALT-2026-9007",
+        "similarity_score": 0.1979,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "0b9f77f1-c03f-48a8-bbe2-45ca89f7facd",
+        "incident_id": "ALT-2026-9032",
+        "similarity_score": 0.1913,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "b23bbf2b-b10a-4df9-87c4-cf630cbab74f",
+        "incident_id": "ALT-2026-9014",
+        "similarity_score": 0.1907,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "8b6b7981-872a-4c0e-b7e2-047a8f8c58e8",
+        "incident_id": "ALT-2026-9057",
+        "similarity_score": 0.1902,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0096",
+    "incident_matches": [
+      {
+        "memory_id": "5e4ac14c-4965-40fd-b97b-92499ef5cfc4",
+        "incident_id": "ALT-2026-9115",
+        "similarity_score": 0.7045,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "26f196f5-8088-48be-932c-ff838e17ddaf",
+        "incident_id": "ALT-2026-9102",
+        "similarity_score": 0.4869,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "75a3a64f-2043-4bf1-8031-26a50cfc3ae7",
+        "incident_id": "ALT-2026-9021",
+        "similarity_score": 0.3469,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "a46fd204-6a9d-4726-b9ac-7bffb2afcd10",
+        "incident_id": "ALT-2026-9046",
+        "similarity_score": 0.1939,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      },
+      {
+        "memory_id": "935a9bfa-993f-48eb-84fb-7d35ed4e1b82",
+        "incident_id": "ALT-2026-9067",
+        "similarity_score": 0.1919,
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable rate limiting and WAF/CDN mitigation, then block identified attack sources",
+        "times_used": 8,
+        "successful_outcomes": 7,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.875
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Volumetric or application-layer traffic overwhelmed an exposed service",
+        "occurrence_count": 8
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-006",
+        "title": "DDoS Mitigation Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0097",
+    "incident_matches": [
+      {
+        "memory_id": "355dfa2a-618d-428b-8c60-ba09e0b26b51",
+        "incident_id": "ALT-2026-9076",
+        "similarity_score": 0.3145,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      },
+      {
+        "memory_id": "a5768f9f-3309-4c10-84fa-0971910a3284",
+        "incident_id": "ALT-2026-9084",
+        "similarity_score": 0.2562,
+        "root_cause": "An AI agent was granted broader permissions than required for its task"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Reduce privileges to least privilege and rotate credentials if excessive access was exercised",
+        "times_used": 3,
+        "successful_outcomes": 3,
+        "failed_outcomes": 0,
+        "empirical_success_rate": 1.0
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "An AI agent was granted broader permissions than required for its task",
+        "occurrence_count": 3
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-017",
+        "title": "Agent Permission Control Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0098",
+    "incident_matches": [
+      {
+        "memory_id": "c99291e6-a650-42bb-ba5b-765a75e6ff31",
+        "incident_id": "ALT-2026-9061",
+        "similarity_score": 0.4525,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "ed39ef1f-93f2-4a79-88cf-4fba1572ccef",
+        "incident_id": "ALT-2026-9007",
+        "similarity_score": 0.1991,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "e648db82-d799-4ce6-91f2-32842b39c1b7",
+        "incident_id": "ALT-2026-9012",
+        "similarity_score": 0.1939,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "0b9f77f1-c03f-48a8-bbe2-45ca89f7facd",
+        "incident_id": "ALT-2026-9032",
+        "similarity_score": 0.1925,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      },
+      {
+        "memory_id": "8b6b7981-872a-4c0e-b7e2-047a8f8c58e8",
+        "incident_id": "ALT-2026-9057",
+        "similarity_score": 0.1907,
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Isolate affected hosts, stop malicious processes, preserve evidence, and restore from clean backups",
+        "times_used": 6,
+        "successful_outcomes": 3,
+        "failed_outcomes": 3,
+        "empirical_success_rate": 0.5
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Ransomware gained execution and attempted to encrypt files on an affected system",
+        "occurrence_count": 6
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-009",
+        "title": "Ransomware Containment Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0099",
+    "incident_matches": [
+      {
+        "memory_id": "600e8728-dc46-4495-91a0-07591bb2da97",
+        "incident_id": "ALT-2026-9050",
+        "similarity_score": 0.4006,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable MFA, rate-limit authentication, and block offending source addresses",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Password-based authentication exposed to automated credential guessing",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-003",
+        "title": "SSH & VPN Brute Force Playbook"
+      }
+    ]
+  },
+  {
+    "bundle_id": "CTX-2026-0100",
+    "incident_matches": [
+      {
+        "memory_id": "600e8728-dc46-4495-91a0-07591bb2da97",
+        "incident_id": "ALT-2026-9050",
+        "similarity_score": 0.4218,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      },
+      {
+        "memory_id": "74143c4c-7080-42b1-8515-7811e616cee9",
+        "incident_id": "ALT-2026-9030",
+        "similarity_score": 0.1356,
+        "root_cause": "Password-based authentication exposed to automated credential guessing"
+      }
+    ],
+    "resolution_matches": [
+      {
+        "resolution": "Enable MFA, rate-limit authentication, and block offending source addresses",
+        "times_used": 5,
+        "successful_outcomes": 4,
+        "failed_outcomes": 1,
+        "empirical_success_rate": 0.8
+      }
+    ],
+    "root_cause_matches": [
+      {
+        "root_cause": "Password-based authentication exposed to automated credential guessing",
+        "occurrence_count": 5
+      }
+    ],
+    "playbook_matches": [
+      {
+        "playbook_id": "PB-003",
+        "title": "SSH & VPN Brute Force Playbook"
+      }
+    ]
+  }
+]
